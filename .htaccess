@@ -1,0 +1,7 @@
+DirectoryIndex MisheelExpo.html
+RewriteEngine On
+RewriteRule ^misheel?$ MisheelExpo.html
+
+
+
+ErrorDocument 404 underconstruction

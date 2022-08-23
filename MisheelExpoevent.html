@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSRF Token -->
+    <meta
+      name="csrf-token"
+      content="DUbu3IMYoccwcUklUyB3025uSsjWE0nB4XhhpVWL"
+    />
+
+    <title>Misheel Expo</title>
+
+    <!-- Scripts -->
+    <script src="assets/js/app.js" defer="defer"></script>
+
+    <!-- Styles -->
+    <link href="assets/css/app.css" rel="stylesheet" />
+    <style>
+      .slick-track[data-v-e4caeaf8] {
+        display: block;
+        left: 0;
+        position: relative;
+        top: 0;
+        transform: translateZ(0);
+      }
+      .slick-track.slick-center[data-v-e4caeaf8] {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .slick-track[data-v-e4caeaf8]:after,
+      .slick-track[data-v-e4caeaf8]:before {
+        content: "";
+        display: table;
+      }
+      .slick-track[data-v-e4caeaf8]:after {
+        clear: both;
+      }
+      .slick-loading .slick-track[data-v-e4caeaf8] {
+        visibility: hidden;
+      }
+      .slick-slide[data-v-e4caeaf8] {
+        display: none;
+        float: left;
+        height: 100%;
+        min-height: 1px;
+      }
+      [dir="rtl"] .slick-slide[data-v-e4caeaf8] {
+        float: right;
+      }
+      .slick-slide img[data-v-e4caeaf8] {
+        display: block;
+      }
+      .slick-slide.slick-loading img[data-v-e4caeaf8] {
+        display: none;
+      }
+      .slick-slide.dragging img[data-v-e4caeaf8] {
+        pointer-events: none;
+      }
+      .slick-initialized .slick-slide[data-v-e4caeaf8] {
+        display: block;
+      }
+      .slick-loading .slick-slide[data-v-e4caeaf8] {
+        visibility: hidden;
+      }
+      .slick-vertical .slick-slide[data-v-e4caeaf8] {
+        border: 1px solid transparent;
+        display: block;
+        height: auto;
+      }
+      .slick-arrow.slick-hidden[data-v-21137603] {
+        display: none;
+      }
+      .slick-slider[data-v-3d1a4f76] {
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: transparent;
+        box-sizing: border-box;
+        display: block;
+        position: relative;
+        touch-action: pan-y;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -khtml-user-select: none;
+      }
+      .slick-list[data-v-3d1a4f76] {
+        display: block;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+        transform: translateZ(0);
+      }
+      .slick-list[data-v-3d1a4f76]:focus {
+        outline: none;
+      }
+      .slick-list.dragging[data-v-3d1a4f76] {
+        cursor: pointer;
+        cursor: hand;
+      }
+    </style>
+    <style>
+            @font-face {
+        font-family: slick;
+        src: url(data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAAATsAA0AAAAAB2wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAE0AAAABoAAAAcdIcYB0dERUYAAAS0AAAAHAAAAB4AJwANT1MvMgAAAZwAAABRAAAAYFAQ/45jbWFwAAACAAAAAFcAAAFiIhFFt2dhc3AAAASsAAAACAAAAAj//wADZ2x5ZgAAAmgAAAE1AAACLD+btmBoZWFkAAABMAAAAC8AAAA2AAEx+2hoZWEAAAFgAAAAHAAAACQD5QIFaG10eAAAAfAAAAAQAAAAFgZKAEpsb2NhAAACWAAAABAAAAAQATYBoG1heHAAAAF8AAAAHQAAACAASwBHbmFtZQAAA6AAAADcAAABbgUngcJwb3N0AAAEfAAAAC4AAABFOXjBpHjaY2BkYGAA4vMGfuHx/DZfGbiZGEDgfGFFPZxWZVBlvM14G8jlYABLAwAT1QnNAHjaY2BkYGC8zcDAoMfEAAJANiMDKmABADBkAe942mNgZGBgYGdwYWBiAAEQycgAEnMA8xkACcgAkwAAAHjaY2BmYmCcwMDKwMDow5jGwMDgDqW/MkgytDAwMDGwcjKAQQNQCZBSYICCgDTXFAYHhkTFSYwP/j9g0GO8/f82A0QNA+NtsBIFBkYANHMN4wAAAHjaY2KAACYIVoVAAALCAJt42mNgYGBmgGAZBkYGEIgB8hjBfBYGByDNw8DBwARkMzAkKigpTlCc9P8/WB0S7/+i+4/uld4rgZoAB4xsDHAhRiYgwcSApoCBcsBMBTNYGGgGAEdEDyUAAAAAAAAAAAAAZgCKANABFnjadZBdToNAEMd3CrtAl5TQLtS0LCoN0A8SGkBI+mAfPET75B1896HppfQcvnII4w3cLYpW6k4ymdn9z8xvBwEKUQg11OgBIXAYWUEQR1uIZoFGpLGxKy3PqrIq8+waXIfJ+5mQSSvkvXwRqqocu1D39QMl2JgvN9zzhsyk1GRDz+OBfzMioCqx0rtdLYo0SiZTZttsOkmidBkveKibFF4Oep9SI46bqk3Twhp4iihUemrMWFPy2NRbthfqKkHi/PxlJLITZdAiSj6ouZ+tn9eZz78DuD9LZYB6bZ8rlCAUVuVdkULjxV4sIEysIc/KSyPmnJDdjhCOdQ0fCTliTX/tjH3ysWao+71qaNjHQjcQwrcuyl+WLZQthCMotJP/h+Xjazz+hfTeRWmG4zOiSyif/q1OtAAAAHjabY49asNAEIU/2ZJDfkiRIvXapUFCEqpcptABUrg3ZhEiQoKVfY9UqVLlGDlADpAT5e16IUWysMz3hjfzBrjjjQT/EjKpCy+4YhN5yZoxcirPe+SMWz4jr6S+5UzSa3VuwpTnBfc8RF7yxDZyKs9r5IxHPiKv1P9iZqDnyAvMQ39UecbScVb/gJO03Xk4CFom3XYK1clhMdQUlKo7/d9NF13RkIdfy+MV7TSe2sl11tRFaXYmJKpWTd7kdVnJ8veevZKc+n3I93t9Jnvr5n4aTVWU/0z9AI2qMkV42mNgYkAGjAzogB0sysTgwtDOyMTIzJlYVJRfnpOaVsIFZhVlpmeUAABuKQkSAAAAAAAB//8AAnjaY2BkYGDgAWIxIGZiYARCNiBmAfMYAAPgADV42mNgYGBkAIKrS9Q5QPT5wop6GA0APf8GGAAA)
+          format("woff");
+      }
+      .slick-next,
+      .slick-prev {
+        border: none;
+        cursor: pointer;
+        display: block;
+        font-size: 0;
+        height: 20px;
+        line-height: 0;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+      }
+      .slick-next,
+      .slick-next:focus,
+      .slick-next:hover,
+      .slick-prev,
+      .slick-prev:focus,
+      .slick-prev:hover {
+        background: transparent;
+        color: transparent;
+        outline: none;
+      }
+      .slick-next:focus:before,
+      .slick-next:hover:before,
+      .slick-prev:focus:before,
+      .slick-prev:hover:before {
+        opacity: 1;
+      }
+      .slick-next.slick-disabled:before,
+      .slick-prev.slick-disabled:before {
+        opacity: 0.25;
+      }
+      .slick-next:before,
+      .slick-prev:before {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: #fff;
+        font-family: slick;
+        font-size: 20px;
+        line-height: 1;
+        opacity: 0.75;
+      }
+      .slick-prev {
+        left: -25px;
+      }
+      [dir="rtl"] .slick-prev {
+        left: auto;
+        right: -25px;
+      }
+      .slick-prev:before {
+        content: "←";
+      }
+      [dir="rtl"] .slick-prev:before {
+        content: "→";
+      }
+      .slick-next {
+        right: -25px;
+      }
+      [dir="rtl"] .slick-next {
+        left: -25px;
+        right: auto;
+      }
+      .slick-next:before {
+        content: "→";
+      }
+      [dir="rtl"] .slick-next:before {
+        content: "←";
+      }
+      .slick-dotted.slick-slider {
+        margin-bottom: 30px;
+      }
+      .slick-dots {
+        bottom: -25px;
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+      }
+      .slick-dots li {
+        display: inline-block;
+        margin: 0 5px;
+        padding: 0;
+        position: relative;
+      }
+      .slick-dots li,
+      .slick-dots li button {
+        cursor: pointer;
+        height: 20px;
+        width: 20px;
+      }
+      .slick-dots li button {
+        background: transparent;
+        border: 0;
+        color: transparent;
+        display: block;
+        font-size: 0;
+        line-height: 0;
+        outline: none;
+        padding: 5px;
+      }
+      .slick-dots li button:focus,
+      .slick-dots li button:hover {
+        outline: none;
+      }
+      .slick-dots li button:focus:before,
+      .slick-dots li button:hover:before {
+        opacity: 1;
+      }
+      .slick-dots li button:before {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: #000;
+        content: "•";
+        font-family: slick;
+        font-size: 6px;
+        height: 20px;
+        left: 0;
+        line-height: 20px;
+        opacity: 0.25;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        width: 20px;
+      }
+      .slick-dots li.slick-active button:before {
+        color: #000;
+        opacity: 0.75;
+      }
+    </style>
+    <style>
+      .slide-container .main-slide {
+        height: 575px;
+        position: relative;
+      }
+      .slide-container .main-slide .slide-img {
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: center;
+        object-position: center;
+        width: 100%;
+      }
+      .slide-container .main-slide .slide-caption {
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        margin-right: 120px;
+        max-width: 450px;
+        padding: 40px;
+        position: absolute;
+        right: 0;
+        top: 106px;
+      }
+      .slide-container .main-slide .slide-caption .caption-title {
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+      .slide-container .main-slide .slide-caption .caption-desc {
+        font-size: 1.1rem;
+        font-weight: 300;
+      }
+      .slide-container .main-slide .slide-caption .caption-btn-view {
+        background-color: #000;
+        border-color: #000;
+        font-size: 0.9rem;
+        font-weight: 700;
+        min-width: 190px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .slide-container .event-slick .slick-list {
+        margin: 0 -5px;
+      }
+      .slide-container .event-slick .slick-slide > div {
+        padding: 0 5px;
+      }
+      .slide-container .event-slick .event-slide {
+        cursor: pointer;
+        transition: opacity 0.3s;
+      }
+      .slide-container .event-slick .event-slide .event-img {
+        height: 200px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: center;
+        object-position: center;
+        width: 100%;
+      }
+      .slide-container .event-slick .event-slide .event-date {
+        font-size: 0.8rem;
+        font-weight: 800;
+        margin-left: 10px;
+      }
+      .slide-container .event-slick .event-slide .event-title {
+        font-size: 0.85rem;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .slide-container .event-slick .event-slide:hover {
+        opacity: 0.75;
+      }
+      .slide-container .custom-arrow {
+        z-index: 1;
+      }
+      .slide-container .custom-arrow.arrow-prev {
+        left: 0;
+        margin-left: 15px;
+      }
+      .slide-container .custom-arrow.arrow-next {
+        margin-right: 25px;
+        right: 0;
+      }
+      .slide-container .custom-arrow:before {
+        font-size: 30px;
+      }
+      .slide-container ul.slick-dots {
+        bottom: 25px !important;
+      }
+      .slide-container ul.slick-dots li {
+        margin: 0 !important;
+      }
+      .slide-container ul.slick-dots li button:before {
+        color: #fff;
+        font-size: 12px;
+      }
+      @media (max-width: 767px) {
+        .slide-container .main-slide {
+          height: 500px !important;
+        }
+        .slide-container .main-slide .slide-caption {
+          margin-right: 0 !important;
+          max-width: 100% !important;
+        }
+        .slide-container .event-slide {
+          padding-right: 0 !important;
+        }
+        .slide-container .event-slick {
+          margin-bottom: 10px !important;
+          margin-top: 10px !important;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <div id="app">
+      <nav
+        class="navbar navbar-expand-md fixed-top navbar-light bg-white shadow-sm pt-0 pb-0"
+      >
+        <div class="container">
+          <a href="MisheelExpo.html" class="navbar-brand"
+            ><img
+              src="assets/img/logo.png"
+              class="img-fluid"
+              style="max-height: 65px"
+          /></a>
+          <button
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            class="navbar-toggler"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto"></ul>
+            <ul class="navbar-nav ms-auto my-navbar-nav">
+              <li class="nav-item">
+                <a
+                  href="MisheelExpoBID.html"
+                  class="nav-link position-relative"
+                >
+                  Бид
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="MisheelExposervice.html"
+                  class="nav-link position-relative"
+                >
+                  Үйлчилгээ
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="MisheelExpoevent.html"
+                  class="nav-link position-relative"
+                >
+                  Арга хэмжээ
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="MisheelExponews.html"
+                  class="nav-link position-relative"
+                >
+                  Мэдээлэл
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main class="main-content" style="padding-top: 76px; min-height: 890px">
+        <div class="container py-4" style="min-height: 800px">
+          <div class="pt-2">
+            <h4 class="fw-bold">Хийсэн ажилууд</h4>
+            <hr class="my-3" style="background-color: rgb(170, 170, 170)" />
+          </div>
+          <div class="d-flex align-items-start flex-column flex-md-row my-5">
+            <div
+              id="v-pills-tab"
+              role="tablist"
+              aria-orientation="vertical"
+              class="nav flex-column nav-pills event-tab"
+              style="min-width: 250px; margin-right: 40px"
+            >
+              <button
+                data-bs-toggle="pill"
+                data-bs-target="#tab0"
+                type="button"
+                role="tab"
+                class="nav-link p-3 mb-3 active"
+              >
+                Дотоодын үзэсгэлэн
+                <span class="badge bg-light text-dark float-end mt-1">4</span>
+              </button>
+              <button
+                data-bs-toggle="pill"
+                data-bs-target="#tab1"
+                type="button"
+                role="tab"
+                class="nav-link p-3 mb-3"
+              >
+                Гадаадын үзэсгэлэн
+                <span class="badge bg-light text-dark float-end mt-1">1</span>
+              </button>
+              <button
+                data-bs-toggle="pill"
+                data-bs-target="#tab2"
+                type="button"
+                role="tab"
+                class="nav-link p-3 mb-3"
+              >
+                Хүлээн авалт
+                <span class="badge bg-light text-dark float-end mt-1">0</span>
+              </button>
+              <button
+                data-bs-toggle="pill"
+                data-bs-target="#tab3"
+                type="button"
+                role="tab"
+                class="nav-link p-3 mb-3"
+              >
+                Албан айлчлал
+                <span class="badge bg-light text-dark float-end mt-1">0</span>
+              </button>
+              <button
+                data-bs-toggle="pill"
+                data-bs-target="#tab4"
+                type="button"
+                role="tab"
+                class="nav-link p-3 mb-3"
+              >
+                Бизнес форум
+                <span class="badge bg-light text-dark float-end mt-1">0</span>
+              </button>
+            </div>
+            <div id="v-pills-tabContent" class="tab-content w-100">
+              <div id="tab0" role="tabpanel" class="tab-pane fade show active">
+                <div class="row g-4">
+                  <div class="col-md-12 col-lg-4">
+                    <div class="card shadow border-0">
+                      <div class="card-body">
+                        <img
+                          src="assets/img/2022-07-18-15-07-08_thumb62d5069c06a82.jpg"
+                          alt="Image"
+                          class="card-img-top"
+                          style="
+                            height: 220px;
+                            object-fit: cover;
+                            object-position: center center;
+                            width: 100%;
+                          "
+                        />
+                        <div class="d-flex text-muted my-2">
+                          <img
+                            src="assets/img/calendar.png"
+                            class="img-fluid"
+                            style="width: 16px"
+                          />
+                          <span class="fw-bold ms-2" style="font-size: 0.8rem">
+                            2022.07.18
+                          </span>
+                        </div>
+                        <div
+                          class="fs-6 fw-bold lh-1 text-uppercase text-max-line-3"
+                          style="min-height: 44px"
+                        >
+                          “Монголын өдрүүд ӨМӨЗО-ны Хянган аймагт” амжилттай
+                          болж өндөрлөө
+                        </div>
+                        <div class="d-grid gap-2 mt-4 mb-2">
+                          <a
+                            href="MisheelExpo.htmlevent/2"
+                            class="btn btn-dark"
+                            >Дэлгэрэнгүй</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 col-lg-4">
+                    <div class="card shadow border-0">
+                      <div class="card-body">
+                        <img
+                          src="assets/img/2022-07-18-15-09-12_thumb62d5071848fa3.jpg"
+                          alt="Image"
+                          class="card-img-top"
+                          style="
+                            height: 220px;
+                            object-fit: cover;
+                            object-position: center center;
+                            width: 100%;
+                          "
+                        />
+                        <div class="d-flex text-muted my-2">
+                          <img
+                            src="assets/img/calendar.png"
+                            class="img-fluid"
+                            style="width: 16px"
+                          />
+                          <span class="fw-bold ms-2" style="font-size: 0.8rem">
+                            2022.07.18
+                          </span>
+                        </div>
+                        <div
+                          class="fs-6 fw-bold lh-1 text-uppercase text-max-line-3"
+                          style="min-height: 44px"
+                        >
+                          Өвөр Монголын бараа бүтээгдэхүүн, тоног төхөөрөмжийн
+                          үзэсгэлэн болж өнгөрлөө
+                        </div>
+                        <div class="d-grid gap-2 mt-4 mb-2">
+                          <a
+                            href="MisheelExpo.htmlevent/3"
+                            class="btn btn-dark"
+                            >Дэлгэрэнгүй</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 col-lg-4">
+                    <div class="card shadow border-0">
+                      <div class="card-body">
+                        <img
+                          src="assets/img/2022-07-18-15-11-58_thumb62d507bebc42e.jpg"
+                          alt="Image"
+                          class="card-img-top"
+                          style="
+                            height: 220px;
+                            object-fit: cover;
+                            object-position: center center;
+                            width: 100%;
+                          "
+                        />
+                        <div class="d-flex text-muted my-2">
+                          <img
+                            src="assets/img/calendar.png"
+                            class="img-fluid"
+                            style="width: 16px"
+                          />
+                          <span class="fw-bold ms-2" style="font-size: 0.8rem">
+                            2022.07.18
+                          </span>
+                        </div>
+                        <div
+                          class="fs-6 fw-bold lh-1 text-uppercase text-max-line-3"
+                          style="min-height: 44px"
+                        >
+                          “Улаанбаатар – Улаанцав – Улаан-үд” хотуудын хамтын
+                          ажиллагаа нэгдсэн арга хэмжээ болж өнгөрлөө
+                        </div>
+                        <div class="d-grid gap-2 mt-4 mb-2">
+                          <a
+                            href="MisheelExpo.htmlevent/4"
+                            class="btn btn-dark"
+                            >Дэлгэрэнгүй</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 col-lg-4">
+                    <div class="card shadow border-0">
+                      <div class="card-body">
+                        <img
+                          src="assets/img/2022-07-18-15-59-17_thumb62d512d583dc6.jpg"
+                          alt="Image"
+                          class="card-img-top"
+                          style="
+                            height: 220px;
+                            object-fit: cover;
+                            object-position: center center;
+                            width: 100%;
+                          "
+                        />
+                        <div class="d-flex text-muted my-2">
+                          <img
+                            src="assets/img/calendar.png"
+                            class="img-fluid"
+                            style="width: 16px"
+                          />
+                          <span class="fw-bold ms-2" style="font-size: 0.8rem">
+                            2022.07.18
+                          </span>
+                        </div>
+                        <div
+                          class="fs-6 fw-bold lh-1 text-uppercase text-max-line-3"
+                          style="min-height: 44px"
+                        >
+                          УЛААНБААТАР БАРИЛГА-2022 ҮЗЭСГЭЛЭН 17 ДАХЬ ЖИЛДЭЭ
+                        </div>
+                        <div class="d-grid gap-2 mt-4 mb-2">
+                          <a
+                            href="MisheelExpo.htmlevent/5"
+                            class="btn btn-dark"
+                            >Дэлгэрэнгүй</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="tab1" role="tabpanel" class="tab-pane fade show">
+                <div class="row g-4">
+                  <div class="col-md-12 col-lg-4">
+                    <div class="card shadow border-0">
+                      <div class="card-body">
+                        <img
+                          src="assets/img/2022-07-18-15-05-52_thumb62d50650179ea.jpg"
+                          alt="Image"
+                          class="card-img-top"
+                          style="
+                            height: 220px;
+                            object-fit: cover;
+                            object-position: center center;
+                            width: 100%;
+                          "
+                        />
+                        <div class="d-flex text-muted my-2">
+                          <img
+                            src="assets/img/calendar.png"
+                            class="img-fluid"
+                            style="width: 16px"
+                          />
+                          <span class="fw-bold ms-2" style="font-size: 0.8rem">
+                            2022.07.07
+                          </span>
+                        </div>
+                        <div
+                          class="fs-6 fw-bold lh-1 text-uppercase text-max-line-3"
+                          style="min-height: 44px"
+                        >
+                          “Монгол, Хятадын экспо” арга хэмжээг зохион байгууллаа
+                        </div>
+                        <div class="d-grid gap-2 mt-4 mb-2">
+                          <a
+                            href="MisheelExpoevent1.html"
+                            class="btn btn-dark"
+                            >Дэлгэрэнгүй</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="tab2" role="tabpanel" class="tab-pane fade show">
+                <div class="row g-4"></div>
+              </div>
+              <div id="tab3" role="tabpanel" class="tab-pane fade show">
+                <div class="row g-4"></div>
+              </div>
+              <div id="tab4" role="tabpanel" class="tab-pane fade show">
+                <div class="row g-4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div
+        class="footer py-4 mt-4"
+        style="
+          background-color: rgb(58, 60, 75);
+          padding-left: 100px;
+          padding-right: 100px;
+        "
+      >
+        <div class="container">
+          <div
+            class="d-flex align-items-center justify-content-between flex-column flex-md-row"
+          >
+            <div class="text-white" style="font-size: 1rem">
+              COPYRIGHT 2022 @ МИШЭЭЛ ЭКСПО БҮХ ЭРХ ХУУЛИАР ХАМГААЛАГДСАН
+            </div>
+            <div>
+              <a href="#facebook" class="me-2 text-decoration-none"
+                ><img
+                  src="assets/img/facebook.png"
+                  class="img-fluid"
+                  style="width: 32px"
+              /></a>
+              <a href="#twitter" class="me-2 text-decoration-none"
+                ><img
+                  src="assets/img/twitter.png"
+                  class="img-fluid"
+                  style="width: 32px"
+              /></a>
+              <a href="#youtube" class="text-decoration-none"
+                ><img
+                  src="assets/img/youtube.png"
+                  class="img-fluid"
+                  style="width: 32px"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
